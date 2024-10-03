@@ -17,3 +17,10 @@ export const ProductProvider = ({ children }) => {
         </ProductContext.Provider>
     );
 };
+
+// ! context : search gg , chat gpt : "prompt : Về câu hỏi, ngữ cảnh, đối tượng"
+
+// ? redux : cửa hàng (cart , user, update avatar, sản phẩm yêu thích)
+
+// ? firebase 
+
