@@ -1,0 +1,139 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Styling for the main container */
+.App {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product list styling */
+.ProductList {
+  width: 65%;
+}
+
+.ProductItem {
+  background-color: #fff;
+  margin-bottom: 20px;
+  width: 300px;
+  height: auto;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.ProductItem:hover {
+  transform: scale(1.05);
+}
+
+.ProductItem h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.ProductItem p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.ProductItem button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ProductItem button:hover {
+  background-color: #0056b3;
+}
+
+.ProductItem img {
+  width: 100%; /* Đảm bảo hình ảnh bao phủ toàn bộ chiều rộng của container */
+  height: auto; /* Đảm bảo tỉ lệ khung hình của ảnh không bị méo */
+  object-fit: cover; /* Đảm bảo ảnh được hiển thị đầy đủ, cắt bỏ phần dư nếu cần */
+  border-radius: 8px; /* Bo góc nhẹ cho hình ảnh */
+  margin-bottom: 10px; /* Thêm khoảng cách giữa ảnh và nội dung bên dưới */
+  transition: transform 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.ProductItem img:hover {
+  transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+/* Cart styling */
+.Cart {
+  width: 30%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Cart h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.Cart div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.Cart div:last-child {
+  border-bottom: none;
+}
+
+.Cart h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.Cart button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Cart button:hover {
+  background-color: #c82333;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .ProductList,
+  .Cart {
+    width: 100%;
+  }
+}
