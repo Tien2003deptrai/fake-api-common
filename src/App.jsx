@@ -1,14 +1,13 @@
-import React from 'react';
-import ProductList from './components/ProductList';
-import Cart from './components/Cart';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import RoutesIndex from './routes/RoutesIndex';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Shopping Cart</h1>
-      <ProductList />
-      <Cart />
-    </div>
+    <>
+      <RoutesIndex />
+      <ToastContainer />
+    </>
   );
 }
 
